@@ -1,0 +1,22 @@
+@include new('menu') {
+	font-family: 'gilroy extrabold', open-sans, sans-serif;
+	@extend .row;
+	@extend .around-xs;
+	@extend .col-md-10;
+	margin: 5px 0;
+	padding: 0;
+
+	@include has('link') {
+		@extend .link;
+		@extend %middle-inline-block;
+		color: $violet;
+		box-sizing: border-box;
+		margin: 0 7px;
+		white-space: nowrap;
+		font-size: 16px;
+	}
+	@include has('link_active') {
+		@extend .menu__link;
+		text-decoration: underline;
+	}
+}

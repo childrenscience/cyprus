@@ -1,0 +1,19 @@
+@include new('socials') {
+	list-style: none;
+	padding: 0;
+	@include has('item') {
+        @extend %middle-inline-block;
+        margin: 0 10px 0;
+	}
+	@include has('link') {
+		display: block;
+        width: 25px;
+        height: 25px;
+        border-radius: 2px;
+        @extend .img-wrap;
+	}
+	@include has('ico') {
+		@extend .img;
+		height: 100%;
+	}
+}

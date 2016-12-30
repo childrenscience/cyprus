@@ -1,0 +1,57 @@
+@include new('main') {
+	padding: 0 10px;
+	width: 100%;
+    font-family:'gilroy light', open-sans, sans-serif;
+	@include breakpoint(64em) {
+		flex: 1 0 720px;
+	}
+
+	@include has('heading') {
+		width: 50%;		
+		margin: 15px 0;
+		color: $white;	
+	    @include font-size(30px);
+	    font-weight: 200;
+	}
+
+	@include has('subheading') {			
+		margin: 15px 0 5px;
+		@include font-size(22px);
+	    font-weight: 200;
+	    line-height: 1.2;
+		color: $white;	
+	}
+
+	@include has ('text') {	
+		@extend .col-sm-6;
+		margin: 15px 0 20px;
+		padding: 0;
+		color: $black;
+		font-family: 'Noto Sans', sans-serif;
+		text-indent: rem(25px);
+		@include font-size(16px);
+	}
+
+	@include has ('text_white') {
+		@extend .main__strong;
+		@include font-size(18px);	}
+
+	@include has ('strong') {	
+		color: $white;
+		font-weight: normal;
+	}
+
+	@include has('link') {
+		@extend .link;
+	}
+
+	@include has('list') {
+		padding: 0.3em 3em;
+	}
+
+	@include has('item') {
+    	margin: 5px 0;
+    	text-indent: 0;
+    	text-align: left;
+	}
+}

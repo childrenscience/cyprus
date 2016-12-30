@@ -1,0 +1,55 @@
+@include new('teacher') {
+	width: 100%;
+	@extend .row;
+	@extend .middle-xs;
+	@extend .center-xs;
+	color: $black;
+	margin: 5px 0;
+	padding: 0 0.5rem;
+	font-size: 15px;
+	font-family: 'Noto Sans', sans-serif;
+
+	@include has('img-wrap') {
+		@extend .img-wrap;
+		@extend .col-xs-12;
+		max-width: 150px;
+		max-height: 270px;
+		margin: 0 1% 0 0;
+		padding: 0;
+    	border-radius: 3px;
+    	@include breakpoint(30em) {
+    		max-width: 24%;
+    		flex-basis: 24%;
+    	}
+	}
+	
+	@include has('img') {
+		@extend .img;
+    	border-radius: 3px;
+	}
+
+	@include has ('info') {		
+		@extend .col-xs-12;	
+		padding: 5px;
+		text-align: left;
+    	@include breakpoint(30em) {
+    		max-width: 75%;
+    		flex-basis: 75%;
+    	}
+		.main__list {
+		    padding: 0.3em 1.2em;
+		}
+	}
+
+	@include has ('name') {
+    	font-size: 17px;
+		font-family: 'gilroy extrabold', open-sans, sans-serif;
+		color: $blue;
+		padding: 0 0 0 1em;
+	}
+
+	@include has('link') {
+		@extend .link;
+	}
+
+}

@@ -1,0 +1,103 @@
+@font-face {
+	font-family: 'gilroy extrabold';
+	src: url('../assets/fonts/Gilroy-ExtraBold.otf') format("opentype");
+}
+@font-face {
+	font-family: 'gilroy light';
+	src: url('../assets/fonts/Gilroy-Light.otf');
+}
+* {
+	box-sizing: border-box;
+}
+html, body, ul, h1,h2,h3,h4, p {
+    margin: 0;
+    padding: 0;
+}
+html {
+	color: $black;
+	font-size: 14px;
+	line-height: 1.42;
+	@include breakpoint(48em) {
+		font-size: 15px;
+	}
+	@include breakpoint(64em) {
+		font-size: 16px;
+	}
+}
+
+html,
+body {
+	height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	height: 100%;
+}
+
+.content {
+	position: relative; z-index: 1;
+	flex: 1 0 auto;
+	padding: 20px 0;
+	background-color: darken(#C7E6BD, 20%);
+	@include breakpoint(64em) {
+		background: url("../assets/images/main.jpg") no-repeat right top / 45% auto darken(#C7E6BD, 20%);
+	}
+}
+
+.content_about {
+	@extend .content;	
+	background: lighten(#5BA5A6, 20%);	
+	@include breakpoint(64em) {
+		background: url("../assets/images/main_about.jpg") no-repeat right top / 50% auto lighten(#5BA5A6, 20%);
+	}
+}
+
+.content_courses {
+	@extend .content;	
+	background: lighten(#5BA5A6, 10%);
+}
+
+.content_program {
+	@extend .content;	
+	@include breakpoint(64em) {
+		background: url("../assets/images/main_program.jpg") no-repeat right top / 100% auto lighten(#5BA5A6, 20%);
+	}
+}
+.content_terms {
+	@extend .content;	
+	@include breakpoint(64em) {
+		background: url("../assets/images/main_terms.jpg") no-repeat right top / 49% auto #BAD4CB;
+	}
+}
+.content_reg {
+	@extend .content;	
+	@include breakpoint(64em) {
+		background: url("../assets/images/main_reg.jpg") no-repeat right top / 60% auto #BAD4CB;
+	}
+}
+
+.content__container {	
+	@include container;
+	@include breakpoint(64em) {/*1024px*/
+		flex-wrap: nowrap;
+	}
+}
+
+.content__photo {
+	display: none;
+	position: absolute;
+	right: 5px; top: 10px;
+	width: 30%;
+	text-align: center;
+	font-size: 14px;
+	background: rgba(255,255,255, 0.6);
+	@include breakpoint(64em) {
+		display: block;
+	}
+}

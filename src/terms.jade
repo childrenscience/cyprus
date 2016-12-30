@@ -1,0 +1,21 @@
+extend parent
+block header_right 
+	nav.header__right
+		div.menu
+			a(href="./" class="menu__link") Главная
+			a(href="./about.html" class="menu__link") О нас
+			a(href="./courses.html" class="menu__link") Курсы
+			a(href="./program.html" class="menu__link") Программа школы
+			a(href="./terms.html" class="menu__link_active") Условия							
+		div.header__auth 					
+			a(href="./reg.html" class="header__link") Регистрация
+
+block content
+	div.content_terms
+		div.content__container 
+			main.main 
+				h1.main__heading Условия 
+				div.main__text Проживание: гостиница на Кипре. Точное место проведения школы пока не известно.
+				div.main__text Участники оплачивают оргвзнос 100€. Отдельно оплачивается проезд, проживание и питание в гостинице.
+				div.main__text Для участия необходимо <a href="reg.html" class="main__link">зарегистрироваться</a>.
+

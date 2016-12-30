@@ -1,0 +1,43 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		title Зимняя школа Интеллектуал
+		meta(http-equiv="X-UA-Compatible" content="IE=edge, chrome=1")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet")
+		link(rel="stylesheet" href="./css/styles.min.css")
+		script(src="js/main.min.js")
+	body
+		div.wrapper
+			header.header
+				div.header__container
+					div.header__left
+						a(href="/" class="logo") 
+							img(src="./assets/images/logo2.png" alt="" class="logo__img")
+					block header_right
+
+			block content
+			
+			footer.footer
+				div.footer__container
+					ul.footer__info
+						li.footer__item
+							Школа «Интеллектуал»
+				
+						li.footer__item
+							Москва, ул. Кременчугская, 13						
+					
+					div.footer__contacts
+						a(href="http://int.mskobr.ru/" class="footer__link") Сайт школы &laquo;Интеллектуал&raquo;
+						a(href="https://vk.com/intsummerschool" class="footer__link") Мы в вк
+						
+					
+					div.footer__contacts
+						a(href="http://sch-int.ru/summer/" class="footer__link") Сайт Летней школы
+						//a(href="tel:+74994455210" class="footer__link") Телефон приемной: +7 499 445-52-10
+						a(href="mailto:lshio.mat.int@gmail.com" class="footer__link") lshio.mat.int@gmail.com				
+					
+															
+									
+		

@@ -1,0 +1,6 @@
+@include new('sidebar') {	
+	padding: 10px;
+	@include breakpoint(64em) {
+		flex: 0 2 auto;
+	}
+}

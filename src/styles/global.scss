@@ -1,0 +1,45 @@
+// Initialize
+// --------------------------------------------------------------------------
+
+@import 'base';
+
+
+// Utilities
+// --------------------------------------------------------------------------
+
+@import 'utilities/normalize.css';
+@import 'utilities/bem';
+@import 'utilities/flexboxgrid';
+@import 'utilities/functions';
+@import 'utilities/mixins';
+@import 'utilities/placeholders';
+
+
+// Generic
+// --------------------------------------------------------------------------
+@import 'generic/forms'; /* для поиска */
+@import 'generic/logo';
+@import 'generic/link';
+@import 'generic/images';
+@import 'generic/socials';
+
+
+
+// Furniture
+// --------------------------------------------------------------------------
+
+@import 'furniture/header';
+@import 'furniture/menu';
+@import 'furniture/footer';
+
+
+// Templates
+// --------------------------------------------------------------------------
+
+@import 'templates/layout';
+@import 'templates/main';
+@import 'templates/sidebar';
+@import 'templates/course';
+@import 'templates/teacher';
+
+

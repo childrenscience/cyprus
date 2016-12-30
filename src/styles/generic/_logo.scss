@@ -1,0 +1,10 @@
+@include new('logo') {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	max-width: 100px;
+	@include has('img') {
+		width: 100%;
+		max-height: 100%;
+	}
+}

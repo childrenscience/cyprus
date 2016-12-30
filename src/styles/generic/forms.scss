@@ -1,0 +1,35 @@
+$button-h: 28px;
+@include new('search') {
+	@extend .col-sm-6;
+	@extend .col-md-5;
+	@extend .end-md;
+	margin: 10px 0 0;
+
+	@include has('input') {
+		width: 200px;
+		height: $button-h;
+		border: 1px solid $blue;
+		outline: none;
+    	vertical-align: middle;
+		@include breakpoint(768px) {
+			width: 283px;	
+		}
+		
+	}
+
+	@include has('button') {
+		width: 70px;
+		height: $button-h;
+		@extend .button;
+		border: 1px solid $blue;
+		background: url("../assets/images/search.png") no-repeat center center $blue;
+	}
+}
+
+@include new ('button') {
+	padding: 0;
+	border-radius: 3px;
+	color: $white;
+	cursor: pointer;
+	vertical-align: middle;
+}

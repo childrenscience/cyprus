@@ -1,0 +1,29 @@
+@include new ('footer') {
+  	flex: 0 0 auto;
+  	font-family: 'Noto Sans', sans-serif;
+	border-top: 2px solid $yellow;
+
+	@include has ('container') {
+		@include container;
+		@extend .row;
+		@extend .middle-xs;
+		padding: 20px 0;
+	}
+
+	@include has ('info') {	
+		@extend .col-sm-4;
+		list-style: none;
+		padding: 0.5rem;
+	    font-size: 15px;
+	}
+
+	@include has('contacts') {
+		@extend .col-sm-4;
+	}
+
+	@include has ('link') {
+		@extend .link;
+		display: block;
+	}
+
+}

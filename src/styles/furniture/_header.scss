@@ -1,0 +1,47 @@
+@include new ('header') {	
+    position: relative; z-index: 2;
+	flex: 0 0 auto;
+	text-align: center;	
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+
+	@include has('container') {
+		@extend .row;
+		@include container;
+		@extend .center-xs;
+		@extend .middle-xs;
+		padding: 10px 0;
+	}	
+
+	@include has('left') {
+		@extend .col-xs-3;
+		@extend .col-sm-2;
+		padding: 0;
+	}
+
+	@include has('right') {
+		@extend .row;
+		@extend .center-xs;
+		@extend .col-sm-10;
+		@extend .middle-xs;
+    	padding: 0;
+	}
+	
+	@include has('auth') {
+		@extend .col-md-2;
+		margin: 5px 0;
+		padding: 0;
+	}
+
+	@include has('link') {
+		@extend %middle-inline-block;
+		@extend .link;
+		margin: 0 7px;
+		font-family: 'gilroy extrabold', open-sans, sans-serif;
+		font-size: 16px;
+	}
+
+	@include has('link_active') {
+		@extend .header__link;
+		text-decoration: underline;
+	}
+}
