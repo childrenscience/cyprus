@@ -6,12 +6,16 @@
 		flex: 1 0 720px;
 	}
 
-	@include has('heading') {
-		width: 50%;		
+	@include has('heading') {	
+		@extend .col-md-6;
 		margin: 15px 0;
+		text-align: center;
 		color: $white;	
 	    @include font-size(30px);
 	    font-weight: 200;
+	    @include breakpoint(64em) {
+	    	text-align: left;
+	    }
 	}
 
 	@include has('subheading') {			
@@ -20,10 +24,14 @@
 	    font-weight: 200;
 	    line-height: 1.2;
 		color: $white;	
+		text-align: center;
+	    @include breakpoint(64em) {
+	    	text-align: left;
+	    }
 	}
 
 	@include has ('text') {	
-		@extend .col-sm-6;
+		@extend .col-md-6;
 		margin: 15px 0 20px;
 		padding: 0;
 		color: $black;
@@ -34,6 +42,7 @@
 
 	@include has ('text_white') {
 		@extend .main__strong;
+		text-indent: rem(25px);
 		@include font-size(18px);	}
 
 	@include has ('strong') {	

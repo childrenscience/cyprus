@@ -54,7 +54,7 @@ a {
 	@extend .content;	
 	background: lighten(#5BA5A6, 20%);	
 	@include breakpoint(64em) {
-		background: url("../assets/images/main_about.jpg") no-repeat right top / 50% auto lighten(#5BA5A6, 20%);
+		background: url("../assets/images/main_about.jpg") no-repeat right top / 45% auto lighten(#5BA5A6, 20%);
 	}
 }
 
@@ -65,20 +65,22 @@ a {
 
 .content_program {
 	@extend .content;	
+	background:  #9FB9BA;
 	@include breakpoint(64em) {
-		background: url("../assets/images/main_program.jpg") no-repeat right top / 100% auto lighten(#5BA5A6, 20%);
+		background: url("../assets/images/main_program.jpg") no-repeat right top / 100% auto  #9FB9BA;
 	}
 }
 .content_terms {
 	@extend .content;	
 	@include breakpoint(64em) {
-		background: url("../assets/images/main_terms.jpg") no-repeat right top / 49% auto #BAD4CB;
+		background: url("../assets/images/main_terms.jpg") no-repeat right top / 49% auto darken(#C7E6BD, 20%);
 	}
 }
 .content_reg {
 	@extend .content;	
+	background: #BAD4CB;
 	@include breakpoint(64em) {
-		background: url("../assets/images/main_reg.jpg") no-repeat right top / 60% auto #BAD4CB;
+		background: url("../assets/images/main_reg.jpg") no-repeat right top / 50% auto #BAD4CB;
 	}
 }
 

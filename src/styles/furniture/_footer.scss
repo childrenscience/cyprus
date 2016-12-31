@@ -19,6 +19,7 @@
 
 	@include has('contacts') {
 		@extend .col-sm-4;
+		padding: 0.5rem;
 	}
 
 	@include has ('link') {
