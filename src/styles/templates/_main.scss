@@ -36,13 +36,11 @@
 		padding: 0;
 		color: $black;
 		font-family: 'Noto Sans', sans-serif;
-		text-indent: rem(25px);
 		@include font-size(16px);
 	}
 
 	@include has ('text_white') {
 		@extend .main__strong;
-		text-indent: rem(25px);
 		@include font-size(18px);	}
 
 	@include has ('strong') {	

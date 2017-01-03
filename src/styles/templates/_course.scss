@@ -22,5 +22,8 @@
 		color: $black;
 		font-family: 'Noto Sans', sans-serif;
 		@include font-size(16px);
+		p {
+			margin: 5px 0;
+		}
 	}
 }

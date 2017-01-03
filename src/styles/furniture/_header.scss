@@ -38,10 +38,11 @@
 		margin: 0 7px;
 		font-family: 'gilroy extrabold', open-sans, sans-serif;
 		font-size: 16px;
+		text-decoration: underline;
 	}
 
 	@include has('link_active') {
 		@extend .header__link;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 }

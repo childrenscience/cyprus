@@ -14,9 +14,10 @@
 		margin: 0 7px;
 		white-space: nowrap;
 		font-size: 16px;
+		text-decoration: underline;
 	}
 	@include has('link_active') {
 		@extend .menu__link;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 }
