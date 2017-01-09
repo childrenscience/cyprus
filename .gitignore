@@ -4,3 +4,6 @@ build/
 gulpfile.js
 package.json
 js/
+build/parent.html
+.idea/
+.gitignore
